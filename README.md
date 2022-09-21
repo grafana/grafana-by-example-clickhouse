@@ -30,4 +30,12 @@ Login into Grafana using:
 - user: admin
 - password: welcome1
 
-### Explore the Dashboards in the Clickhouse folder [Clickhouse Dashboard Folder](http://localhost:3000/dashboards/f/-LbHjanVk/clickhouse-demo)
+### Explore the Dashboards
+
+There are a set of Clickhouse dashboards in the folder [Clickhouse Dashboard Folder](http://localhost:3000/dashboards/f/-LbHjanVk/clickhouse-demo), these include: Cluster Analysis, Data Analysis, Query Analysis, Row Counts and Stock Charts all built using the Grafana Clickhouse datasource and data stored in Clickhouse
+
+### Stop the containers
+```
+./ctl.sh local down
+```
+
