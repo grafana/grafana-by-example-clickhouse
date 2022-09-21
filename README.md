@@ -24,7 +24,7 @@ cd grafana-by-example-clickhouse
 ```
 
 ### Navigate to Grafana 
-[Navigate to Grafana]([https://github.com/grafana/grafana-by-example-clickhouse/blob/main/images/architecture1.png](http://localhost:3000/))
+[Navigate to Grafana](https://github.com/grafana/grafana-by-example-clickhouse/blob/main/images/architecture1.png](http://localhost:3000/)
 
 Login into Grafana using:
 - user: admin
