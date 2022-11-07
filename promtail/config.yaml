@@ -8,6 +8,8 @@ positions:
 
 clients:
   - url: http://loki:3100/loki/api/v1/push
+    external_labels:
+      job: promtail
 
 scrape_configs:
   - job_name: system
@@ -16,6 +18,7 @@ scrape_configs:
         - localhost
       labels:
         job: varlogs
+        source: promtail
         __path__: /var/log/*log
   - job_name: pushapi
     loki_push_api:

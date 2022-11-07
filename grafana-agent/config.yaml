@@ -29,8 +29,16 @@ logs:
         clients:
           - url: http://loki:3100/loki/api/v1/push
             external_labels:
-              job: agent
+              job: grafana_agent
         scrape_configs:
+          - job_name: system
+            static_configs:
+            - targets:
+                - localhost
+              labels:
+                job: varlogs
+                source: grafana_agent
+                __path__: /var/log/*log
           - job_name: pushapi
             loki_push_api:
               server:
